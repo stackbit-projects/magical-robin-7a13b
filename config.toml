@@ -1,0 +1,278 @@
+baseURL = ""
+title = "Airspace | Creative Agency Hugo Template"
+theme = "airspace hugo"
+themesDir = "themes"
+paginate = "4"
+summaryLength = "30"
+disqusShortname = ""
+disableLanguages = [ ]
+publishDir = "public"
+
+[outputs]
+home = [ "HTML" ]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+logo = "images/logo.png"
+logo_width = "150px"
+description = "This is meta description"
+author = "Themefisher"
+mobile = "0124857985320"
+email = "demo@email.com"
+location = "North Main Street,Brooklyn Australia"
+contact_form_action = "#"
+google_analitycs_id = ""
+multi_author = false
+
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+attributes = "media='screen'"
+
+[[params.plugins.css]]
+link = "plugins/Ionicons/css/ionicons.min.css"
+attributes = ""
+
+[[params.plugins.css]]
+link = "plugins/magnific-popup/magnific-popup.min.css"
+attributes = ""
+
+[[params.plugins.css]]
+link = "plugins/slick/slick.css"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/magnific-popup/magnific-popup.min.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/shuffle/shuffle.min.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/google-map/gmap.js"
+attributes = ""
+
+  [params.widgets]
+  sidebar = [ "recent_posts", "taxonomy_category", "taxonomy_tags" ]
+
+  [params.preloader]
+  enable = true
+  preloader = ""
+
+  [params.nav_button]
+  enable = true
+  label = "Get A Quote"
+  link = "contact"
+
+  [params.gmap]
+  enable = true
+  gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+  map_latitude = "51.5223477"
+  map_longitude = "-0.1622023"
+  map_marker = "images/marker.png"
+
+  [params.cookies]
+  enable = true
+  expire_days = 2
+
+  [[params.social]]
+  icon = "ion-social-googleplus-outline"
+  link = "#"
+
+  [[params.social]]
+  icon = "ion-social-linkedin-outline"
+  link = "#"
+
+  [[params.social]]
+  icon = "ion-social-pinterest-outline"
+  link = "#"
+
+  [[params.social]]
+  icon = "ion-social-dribbble-outline"
+  link = "#"
+
+  [[params.social]]
+  icon = "ion-social-twitter-outline"
+  link = "#"
+
+  [[params.social]]
+  icon = "ion-social-facebook-outline"
+  link = "#"
+
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
+
+[[Languages.en.menu.main]]
+name = "Home"
+URL = "/"
+weight = 1
+
+[[Languages.en.menu.main]]
+name = "About"
+URL = "about"
+weight = 2
+
+[[Languages.en.menu.main]]
+name = "Project"
+URL = "project"
+weight = 3
+
+[[Languages.en.menu.main]]
+name = "Blog"
+URL = "blog"
+weight = 4
+
+[[Languages.en.menu.main]]
+weight = 5
+name = "Pages"
+hasChildren = true
+
+[[Languages.en.menu.main]]
+parent = "Pages"
+name = "FAQ"
+URL = "faq"
+
+[[Languages.en.menu.main]]
+parent = "Pages"
+name = "Pricing"
+URL = "pricing"
+
+[[Languages.en.menu.main]]
+parent = "Pages"
+name = "Service"
+URL = "service"
+
+[[Languages.en.menu.main]]
+name = "Contact"
+URL = "contact"
+weight = 6
+
+[[Languages.en.menu.footer]]
+name = "About"
+URL = "about"
+weight = 1
+
+[[Languages.en.menu.footer]]
+name = "Project"
+URL = "project"
+weight = 2
+
+[[Languages.en.menu.footer]]
+name = "Service"
+URL = "service"
+weight = 3
+
+[[Languages.en.menu.footer]]
+name = "Pricing"
+URL = "pricing"
+weight = 4
+
+[[Languages.en.menu.footer]]
+name = "FAQ"
+URL = "faq"
+weight = 5
+
+[[Languages.en.menu.footer]]
+name = "Contact"
+URL = "contact"
+weight = 6
+
+[Languages.fr]
+languageName = "Fr"
+languageCode = "fr-fr"
+contentDir = "content/french"
+weight = 2
+copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
+
+[[Languages.fr.menu.main]]
+name = "Accueil"
+URL = "/"
+weight = 1
+
+[[Languages.fr.menu.main]]
+name = "À propos"
+URL = "about"
+weight = 2
+
+[[Languages.fr.menu.main]]
+name = "Projet"
+URL = "project"
+weight = 3
+
+[[Languages.fr.menu.main]]
+name = "Blog"
+URL = "blog"
+weight = 4
+
+[[Languages.fr.menu.main]]
+weight = 5
+name = "Pages"
+hasChildren = true
+
+[[Languages.fr.menu.main]]
+parent = "Pages"
+name = "FAQ"
+URL = "faq"
+
+[[Languages.fr.menu.main]]
+parent = "Pages"
+name = "Tarification"
+URL = "pricing"
+
+[[Languages.fr.menu.main]]
+parent = "Pages"
+name = "Un service"
+URL = "service"
+
+[[Languages.fr.menu.main]]
+name = "Contact"
+URL = "contact"
+weight = 6
+
+[[Languages.fr.menu.footer]]
+name = "About"
+URL = "about"
+weight = 1
+
+[[Languages.fr.menu.footer]]
+name = "Project"
+URL = "project"
+weight = 2
+
+[[Languages.fr.menu.footer]]
+name = "Service"
+URL = "service"
+weight = 3
+
+[[Languages.fr.menu.footer]]
+name = "Pricing"
+URL = "pricing"
+weight = 4
+
+[[Languages.fr.menu.footer]]
+name = "FAQ"
+URL = "faq"
+weight = 5
+
+[[Languages.fr.menu.footer]]
+name = "Contact"
+URL = "contact"
+weight = 6
